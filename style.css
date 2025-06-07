@@ -1,125 +1,60 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  background: #f9f9f9;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-header {
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077cc;
+  display: block;
+  margin: 20px auto;
+}
+
+h1 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5px;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.2rem;
-}
-
-.title {
-  font-weight: 600;
-  color: #555;
+h3 {
+  text-align: center;
+  color: #444;
 }
 
 section {
-  margin-bottom: 2.5rem;
+  margin: 30px 0;
 }
 
 h2 {
-  border-bottom: 3px solid #007acc;
-  padding-bottom: 0.3rem;
-  color: #007acc;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 5px;
 }
 
 .project {
   background: #fff;
-  padding: 1rem 1.2rem;
-  border-radius: 6px;
-  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
-  margin-bottom: 1.2rem;
-}
-
-.project h3 {
-  margin-top: 0;
-  color: #005f99;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #0077cc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 a {
-  color: #007acc;
+  color: #0077cc;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-footer {
-  text-align: center;
-  color: #888;
-  font-size: 0.9rem;
-  padding: 1rem 0;
-  border-top: 1px solid #ccc;
-  margin-top: 3rem;
-}
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #0077cc;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.about-card {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #4CAF50;
-}
-
-.about-text h1 {
-  margin: 0;
-  font-size: 28px;
-  color: #333;
-}
-
-.about-text h3 {
-  margin: 5px 0;
-  color: #777;
-}
-
-.about-text p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #555;
 }
