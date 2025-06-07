@@ -71,3 +71,13 @@ footer {
   border-top: 1px solid #ccc;
   margin-top: 3rem;
 }
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4CAF50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 20px auto;
+}
