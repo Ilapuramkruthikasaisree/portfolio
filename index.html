@@ -10,45 +10,41 @@
   <div class="container">
 
     <!-- Profile Section -->
-    <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
+    <img src="profile.jpg" alt="Profile Photo" class="profile-pic" onclick="openModal()" />
     <h1>Ilapuram Kruthika Sai Sree</h1>
     <h3>AIML Engineer & Tech Enthusiast</h3>
 
-    <!-- About Section -->
+    <!-- About -->
     <section>
       <h2><a href="about.html">About Me</a></h2>
       <p>I'm an AI/ML engineer with a passion for solving real-world problems using data. I enjoy building smart systems that enhance everyday life. I love developing and deploying machine learning models.</p>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section>
       <h2><a href="skills.html">Skills</a></h2>
       <ul>
         <li><strong>Programming Languages:</strong> Python, SQL, C++</li>
-        <li><strong>AI/ML Tools & Frameworks:</strong> Pandas, NumPy, Scikit-Learn, OpenCV, Matplotlib, Seaborn</li>
+        <li><strong>AI/ML Tools:</strong> Pandas, NumPy, Scikit-Learn, OpenCV</li>
         <li><strong>Web & Backend:</strong> Flask, React, HTML, CSS</li>
-        <li><strong>Tools & Technologies:</strong> Microsoft Azure, GitHub, Jupyter, Microsoft Office, Databases</li>
+        <li><strong>Tools:</strong> Microsoft Azure, GitHub, Jupyter, Office</li>
       </ul>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section>
       <h2>Projects</h2>
-
       <div class="project">
         <h3>Handwritten Digit Recognition</h3>
-        <p>A CNN model trained on the MNIST dataset to identify digits from 0 to 9 using deep learning techniques.</p>
+        <p>A CNN model trained on MNIST dataset to classify handwritten digits.</p>
         <p><strong>Tools:</strong> Python, CNN, MNIST</p>
         <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">GitHub Link</a>
       </div>
-
       <div class="project">
         <h3>Email Spam Classifier</h3>
-        <p>Classifies emails as spam or not using NLP and TF-IDF with Naive Bayes/SVM.</p>
-        <p><strong>Tools:</strong> Python, Scikit-learn, NLP, TF-IDF</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/spamemail" target="_blank">GitHub Link</a>
+        <p>Classifies emails using TF-IDF and Naive Bayes.</p>
+        <p><strong>Tools:</strong> Python, Scikit-learn, NLP</p>
       </div>
-
       <div class="project">
         <h3>House Price Prediction</h3>
         <p>Estimates housing prices using regression models based on location, size, and other features.</p>
@@ -72,23 +68,23 @@
       <div class="project">
         <h3>Eye Ease Detection</h3>
         <p>Computer vision application to detect and prevent eye strain.</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/Eye-ease-detection" target="_blank">GitHub Link</a>
-      </div>
+        <a href="http
     </section>
-    <!-- Certifications Section -->
+
+    <!-- Certifications -->
     <section>
       <h2><a href="certifications.html">Certifications</a></h2>
       <ul>
-        <li><strong>Microsoft Azure AI - Document Intelligence and Knowledge Mining</strong></li>
-        <li><strong>Microsoft Azure AI - Natural Language Processing</strong></li>
+        <li><strong>Microsoft Azure AI - Document Intelligence</strong></li>
+        <li><strong>Microsoft Azure AI - NLP</strong></li>
         <li><strong>Microsoft Azure AI - AI Overview</strong></li>
         <li><strong>Microsoft Azure AI - Computer Vision</strong></li>
-        <li><strong>Cambridge English Empower B2 Level Certificate</strong></li>
-        <li><strong>Innovation and Entrepreneurship Summit - Mallareddy University</strong></li>
+        <li><strong>Cambridge English Empower B2</strong></li>
+        <li><strong>Innovation Summit - Mallareddy University</strong></li>
       </ul>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section>
       <h2><a href="contact.html">Contact</a></h2>
       <ul>
@@ -101,7 +97,20 @@
         <li><a href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Salesforce Trailhead</a></li>
       </ul>
     </section>
-
   </div>
+
+  <!-- Modal for Enlarged Profile -->
+  <div id="modal" onclick="closeModal()">
+    <img src="profile.jpg" alt="Full Size Profile" />
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById("modal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
