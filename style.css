@@ -1,14 +1,11 @@
-/* Dark Theme Portfolio Styles */
-
 :root {
-  --primary: #a29bfe; /* Light purple */
-  --accent: #ff7675;  /* Coral pink */
+  --primary: #a29bfe;
+  --accent: #ff7675;
   --bg-dark: #1e1e2f;
   --bg-light: #2c2c3e;
   --text-color: #e0e0e0;
 }
 
-/* Base styles */
 body {
   margin: 0;
   padding: 0;
@@ -17,14 +14,12 @@ body {
   color: var(--text-color);
 }
 
-/* Container layout */
 .container {
   max-width: 950px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* Typography */
 h1, h2, h3 {
   margin: 10px 0;
   text-align: center;
@@ -48,7 +43,6 @@ h3 {
   color: #bbb;
 }
 
-/* Section styling */
 section {
   background: var(--bg-light);
   padding: 30px;
@@ -57,7 +51,6 @@ section {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Lists */
 ul {
   padding-left: 20px;
 }
@@ -67,7 +60,6 @@ li {
   line-height: 1.6;
 }
 
-/* Profile Image */
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -85,7 +77,6 @@ li {
   transform: scale(1.05);
 }
 
-/* Project Card */
 .project {
   background: #2a2a3d;
   padding: 20px;
@@ -95,7 +86,6 @@ li {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -113,7 +103,6 @@ li {
   color: #000;
 }
 
-/* Modal for Image Popup */
 #modal {
   display: none;
   position: fixed;
