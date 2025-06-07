@@ -1,209 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ilapuram Kruthika Sai Sree | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    :root {
-      --primary: #9b59b6;
-      --accent: #ff7675;
-      --background: #1e1e2f;
-      --text: #e0e0e0;
-    }
+/* Portfolio Global Styles */
 
-    body {
-      background: linear-gradient(to bottom right, #141414, #1e1e2f);
-      color: var(--text);
-    }
+:root {
+  --primary: #4a69bd;
+  --accent: #ffb6b9;
+  --background-start: #f5f7fa;
+  --background-end: #c3cfe2;
+  --text-color: #2c3e50;
+}
 
-    h2 {
-      color: var(--accent);
-      border-bottom: 2px solid var(--accent);
-    }
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
+  color: var(--text-color);
+}
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--primary);
-      display: block;
-      margin: 20px auto 10px auto;
-      box-shadow: 0 0 20px var(--accent);
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
+/* Layout Container */
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    .profile-pic:hover {
-      transform: scale(1.05);
-    }
+/* Typography */
+h1, h2, h3 {
+  margin: 10px 0;
+  text-align: center;
+}
 
-    section {
-      margin: 60px 0;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.04);
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    }
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: var(--primary);
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
+h2 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
-    .btn:hover {
-      background: var(--accent);
-      color: #000;
-    }
+h3 {
+  font-weight: normal;
+  color: #555;
+}
 
-    /* Image Modal */
-    #modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.9);
-    }
+/* Sections */
+section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  margin: 50px 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
 
-    #modal img {
-      margin: 5% auto;
-      display: block;
-      max-width: 90%;
-      max-height: 80vh;
-      border: 4px solid var(--accent);
-      border-radius: 12px;
-    }
+/* Lists */
+ul {
+  padding-left: 20px;
+}
 
-    #modal span {
-      position: absolute;
-      top: 30px;
-      right: 40px;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="profile.jpg" alt="Profile Photo" class="profile-pic" onclick="showModal()" />
-    <h1 style="text-align:center; color:#ffffff;">Ilapuram Kruthika Sai Sree</h1>
-    <h3 style="text-align:center; color:#aaaaaa;">AIML Engineer & Tech Enthusiast</h3>
+li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
 
-    <section>
-      <h2>About Me</h2>
-      <p>I'm an AI/ML engineer with a passion for solving real-world problems using data. I enjoy building smart systems that enhance everyday life. I love developing and deploying machine learning models.</p>
-    </section>
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--primary);
+  box-shadow: 0 0 15px rgba(74, 105, 189, 0.4);
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 
-    <section>
-      <h2>Projects</h2>
+.profile-pic:hover {
+  transform: scale(1.05);
+}
 
-      <div class="project">
-        <h3>Handwritten Digit Recognition</h3>
-        <p>A CNN model trained on the MNIST dataset to identify digits from 0 to 9 using deep learning techniques.</p>
-        <p><strong>Tools:</strong> Python, CNN, MNIST</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">GitHub Link</a>
-      </div>
+/* Projects */
+.project {
+  border-left: 5px solid var(--primary);
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
 
-      <div class="project">
-        <h3>Email Spam Classifier</h3>
-        <p>Classifies emails as spam or not using NLP and TF-IDF with Naive Bayes/SVM.</p>
-        <p><strong>Tools:</strong> Python, Scikit-learn, NLP, TF-IDF</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/spamemail" target="_blank">GitHub Link</a>
-      </div>
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
 
-      <div class="project">
-        <h3>House Price Prediction</h3>
-        <p>Estimates housing prices using regression models based on location, size, and other features.</p>
-        <p><strong>Tools:</strong> Python, XGBoost, Regression</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/houseprice" target="_blank">GitHub Link</a>
-      </div>
+.btn:hover {
+  background-color: var(--accent);
+  color: #000;
+}
 
-      <div class="project">
-        <h3>Stock Price Prediction</h3>
-        <p>Forecasts stock prices using LSTM and Random Forest models on time-series data.</p>
-        <p><strong>Tools:</strong> Python, LSTM, Time Series</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/stockprice" target="_blank">GitHub Link</a>
-      </div>
+/* Modal Viewer */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
-      <div class="project">
-        <h3>Online Shoppers Intention</h3>
-        <p>Analyzed customer behavior and optimized features through EDA and preprocessing.</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/onlineshoppers" target="_blank">GitHub Link</a>
-      </div>
+#modal img {
+  margin: 5% auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border: 4px solid var(--accent);
+  border-radius: 12px;
+}
 
-      <div class="project">
-        <h3>Eye Ease Detection</h3>
-        <p>Computer vision application to detect and prevent eye strain.</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/Eye-ease-detection" target="_blank">GitHub Link</a>
-      </div>
-    </section>
-
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Handwritten Digit Recognition</h3>
-        <p>A CNN model trained on the MNIST dataset to identify handwritten digits accurately.</p>
-        <p><strong>Tools:</strong> Python, CNN, MNIST</p>
-        <a class="btn" href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">View Project</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>Microsoft Azure AI - Document Intelligence and Knowledge Mining</li>
-        <li>Microsoft Azure AI - Natural Language Processing</li>
-        <li>Microsoft Azure AI - AI Overview</li>
-        <li>Microsoft Azure AI - Computer Vision</li>
-        <li>Cambridge English Empower B2 Certificate</li>
-        <li>Innovation & Entrepreneurship Summit – MLRU</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: kruthikasaisreereddy@gmail.com</li>
-        <li>College: 2311CS020430@mallareddyuniversity.ac.in</li>
-        <li><a class="btn" href="https://www.linkedin.com/in/kruthika-sai-sree-876b02293/" target="_blank">LinkedIn</a></li>
-        <li><a class="btn" href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a></li>
-        <li><a class="btn" href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a></li>
-        <li><a class="btn" href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a></li>
-        <li><a class="btn" href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Trailhead</a></li>
-      </ul>
-    </section>
-  </div>
-
-  <!-- Modal Viewer -->
-  <div id="modal">
-    <span onclick="closeModal()">&times;</span>
-    <img id="modalImg" src="profile.jpg" alt="Full-size Profile" />
-  </div>
-
-  <script>
-    function showModal() {
-      document.getElementById('modal').style.display = 'block';
-    }
-
-    function closeModal() {
-      document.getElementById('modal').style.display = 'none';
-    }
-  </script>
-</body>
-</html>
+#modal span {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
