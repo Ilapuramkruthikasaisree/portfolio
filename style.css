@@ -1,58 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f8f9fa;
-  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
   margin: 0;
   padding: 0;
 }
 
 .container {
   max-width: 800px;
-  margin: auto;
-  padding: 20px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #0077cc;
+  border: 3px solid #00b894;
   display: block;
-  margin: 20px auto;
+  margin: 0 auto 15px auto;
 }
 
 h1 {
   text-align: center;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
 h3 {
   text-align: center;
-  color: #444;
+  color: #aaaaaa;
+  margin-top: 0;
 }
 
 section {
-  margin: 30px 0;
+  margin: 35px 0;
 }
 
 h2 {
-  color: #0077cc;
-  border-bottom: 2px solid #0077cc;
+  color: #00cec9;
+  border-bottom: 2px solid #00cec9;
   padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 .project {
-  background: #fff;
-  padding: 15px;
+  background-color: #2a2a2a;
+  padding: 15px 20px;
+  border-left: 5px solid #00cec9;
+  border-radius: 8px;
   margin-bottom: 20px;
-  border-left: 4px solid #0077cc;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 a {
-  color: #0077cc;
+  color: #00cec9;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
