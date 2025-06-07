@@ -1,8 +1,8 @@
-/* style.css — Dark Theme */
+/* Dark Theme Portfolio Styles */
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
+  background: linear-gradient(to bottom right, #121212, #1e1e1e);
   color: #e0e0e0;
   margin: 0;
   padding: 0;
@@ -25,6 +25,7 @@ body {
   border: 3px solid #00b894;
   display: block;
   margin: 0 auto 15px auto;
+  box-shadow: 0 0 15px #00cec9;
 }
 
 h1 {
@@ -51,6 +52,14 @@ h2 {
   margin-bottom: 15px;
 }
 
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
 .project {
   background-color: #2a2a2a;
   padding: 15px 20px;
@@ -58,14 +67,21 @@ h2 {
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
 }
 
 a {
   color: #00cec9;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #81ecec;
   text-decoration: underline;
 }
