@@ -6,72 +6,159 @@
   <title>Ilapuram Kruthika Sai Sree | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Enhancements on top of your existing style.css */
+    :root {
+      --primary: #4a69bd;
+      --accent: #ffb6b9;
+      --background-start: #f5f7fa;
+      --background-end: #c3cfe2;
+      --text-color: #2c3e50;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
+      color: var(--text-color);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    h1 {
+      color: var(--primary);
+    }
+
+    h2 {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-weight: normal;
+      color: #555;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      box-shadow: 0 0 12px rgba(74, 105, 189, 0.5);
+      display: block;
+      margin: 20px auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
 
     section {
-      margin: 60px 0;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255, 255, 255, 0.9);
+      margin: 50px 0;
+      padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 12px;
+      margin: 8px 5px 0 0;
       padding: 10px 20px;
-      background: #00cec9;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
+      background: var(--primary);
+      color: #fff;
       border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
       transition: background 0.3s ease;
     }
 
     .btn:hover {
-      background: #81ecec;
+      background: var(--accent);
+      color: #000;
     }
 
-    .project a.btn {
-      margin-top: 10px;
+    .project {
+      border-left: 5px solid var(--primary);
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     }
 
-    .divider {
-      width: 60px;
-      height: 6px;
-      background: #00cec9;
-      border-radius: 3px;
-      margin: 20px auto;
+    /* Modal Viewer */
+    #modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    #modal img {
+      display: block;
+      margin: 5% auto;
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 12px;
+      border: 3px solid var(--accent);
+    }
+
+    #modal span {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 40px;
+      color: #fff;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <div class="container">
-
-    <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
+    <img src="profile.jpg" alt="Profile Photo" class="profile-pic" onclick="showModal()" />
     <h1>Ilapuram Kruthika Sai Sree</h1>
     <h3>AIML Engineer & Tech Enthusiast</h3>
 
-    <div class="divider"></div>
-
-    <!-- About -->
     <section>
       <h2>About Me</h2>
       <p>I'm an AI/ML engineer with a passion for solving real-world problems using data. I enjoy building smart systems that enhance everyday life. I love developing and deploying machine learning models.</p>
     </section>
 
-    <!-- Skills -->
     <section>
       <h2>Skills</h2>
       <ul>
         <li><strong>Programming Languages:</strong> Python, SQL, C++</li>
-        <li><strong>AI/ML Tools & Frameworks:</strong> Pandas, NumPy, Scikit-Learn, OpenCV, Matplotlib, Seaborn</li>
-        <li><strong>Web & Backend:</strong> Flask, React, HTML, CSS</li>
-        <li><strong>Tools & Technologies:</strong> Microsoft Azure, GitHub, Jupyter, Microsoft Office, Databases</li>
+        <li><strong>Frameworks:</strong> Pandas, NumPy, Scikit-Learn, OpenCV</li>
+        <li><strong>Web Tech:</strong> Flask, React, HTML, CSS</li>
+        <li><strong>Tools:</strong> Azure, GitHub, Jupyter, Office</li>
       </ul>
     </section>
-
-    <!-- Projects -->
     <section>
       <h2>Projects</h2>
 
@@ -117,7 +204,7 @@
     </section>
 
 
-    <!-- Certifications -->
+
     <section>
       <h2>Certifications</h2>
       <ul>
@@ -130,7 +217,6 @@
       </ul>
     </section>
 
-    <!-- Contact -->
     <section>
       <h2>Contact</h2>
       <ul>
@@ -140,10 +226,24 @@
         <li><a class="btn" href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a></li>
         <li><a class="btn" href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a></li>
         <li><a class="btn" href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a></li>
-        <li><a class="btn" href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Salesforce Trailhead</a></li>
+        <li><a class="btn" href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Trailhead</a></li>
       </ul>
     </section>
-
   </div>
+
+  <!-- Modal Viewer -->
+  <div id="modal">
+    <span onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="profile.jpg" alt="Full-size Profile" />
+  </div>
+
+  <script>
+    function showModal() {
+      document.getElementById('modal').style.display = 'block';
+    }
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
