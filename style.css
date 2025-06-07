@@ -1,14 +1,12 @@
 :root {
-  --primary: #ff6b6b;      /* Coral Red */
-  --accent: #feca57;       /* Golden Yellow */
-  --bg-dark: #1e1e2f;      /* Page background */
-  --bg-light: #2e2c36;     /* Section background */
-  --text-color: #f5f5f5;   /* Light readable text */
+  --primary: #ff6b6b;       /* Coral Red */
+  --accent: #feca57;        /* Golden Yellow */
+  --bg-dark: #1e1e2f;       /* Overall background */
+  --bg-light: #2e2c36;      /* Section background */
+  --text-color: #f5f5f5;    /* Main text */
 }
 
-
-
-/* Base Styles */
+/* Base */
 body {
   margin: 0;
   padding: 0;
@@ -62,7 +60,7 @@ ul {
 }
 
 li, p {
-  color: #eaeaea;
+  color: #f0f0f0;
   margin-bottom: 10px;
   line-height: 1.6;
 }
@@ -87,7 +85,7 @@ li, p {
 
 /* Projects */
 .project {
-  background: #38385a;
+  background: #38384a;
   padding: 20px;
   margin-bottom: 20px;
   border-left: 5px solid var(--primary);
