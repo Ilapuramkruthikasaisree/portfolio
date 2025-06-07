@@ -5,22 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ilapuram Kruthika Sai Sree | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Enhancements on top of your existing style.css */
+
+    section {
+      margin: 60px 0;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 20px;
+      background: #00cec9;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #81ecec;
+    }
+
+    .project a.btn {
+      margin-top: 10px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 6px;
+      background: #00cec9;
+      border-radius: 3px;
+      margin: 20px auto;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
 
-    <!-- Profile Section -->
     <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>Ilapuram Kruthika Sai Sree</h1>
     <h3>AIML Engineer & Tech Enthusiast</h3>
 
-    <!-- About Section -->
+    <div class="divider"></div>
+
+    <!-- About -->
     <section>
       <h2>About Me</h2>
       <p>I'm an AI/ML engineer with a passion for solving real-world problems using data. I enjoy building smart systems that enhance everyday life. I love developing and deploying machine learning models.</p>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section>
       <h2>Skills</h2>
       <ul>
@@ -31,8 +71,8 @@
       </ul>
     </section>
 
-    <!-- Projects Section -->
-  <section>
+    <!-- Projects -->
+    <section>
       <h2>Projects</h2>
 
       <div class="project">
@@ -76,30 +116,31 @@
       </div>
     </section>
 
-    <!-- Certifications Section -->
+
+    <!-- Certifications -->
     <section>
       <h2>Certifications</h2>
       <ul>
-        <li><strong>Microsoft Azure AI - Document Intelligence and Knowledge Mining</strong></li>
-        <li><strong>Microsoft Azure AI - Natural Language Processing</strong></li>
-        <li><strong>Microsoft Azure AI - AI Overview</strong></li>
-        <li><strong>Microsoft Azure AI - Computer Vision</strong></li>
-        <li><strong>Cambridge English Empower B2 Level Certificate</strong></li>
-        <li><strong>Innovation and Entrepreneurship Summit - Mallareddy University</strong></li>
+        <li>Microsoft Azure AI - Document Intelligence and Knowledge Mining</li>
+        <li>Microsoft Azure AI - Natural Language Processing</li>
+        <li>Microsoft Azure AI - AI Overview</li>
+        <li>Microsoft Azure AI - Computer Vision</li>
+        <li>Cambridge English Empower B2 Level Certificate</li>
+        <li>Innovation and Entrepreneurship Summit - Mallareddy University</li>
       </ul>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section>
       <h2>Contact</h2>
       <ul>
         <li>Email: kruthikasaisreereddy@gmail.com</li>
         <li>College Email: 2311CS020430@mallareddyuniversity.ac.in</li>
-        <li><a href="https://www.linkedin.com/in/kruthika-sai-sree-876b02293/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a></li>
-        <li><a href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a></li>
-        <li><a href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a></li>
-        <li><a href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Salesforce Trailhead</a></li>
+        <li><a class="btn" href="https://www.linkedin.com/in/kruthika-sai-sree-876b02293/" target="_blank">LinkedIn</a></li>
+        <li><a class="btn" href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a></li>
+        <li><a class="btn" href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a></li>
+        <li><a class="btn" href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a></li>
+        <li><a class="btn" href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Salesforce Trailhead</a></li>
       </ul>
     </section>
 
