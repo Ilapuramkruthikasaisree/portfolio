@@ -3,50 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ilapuram Kruthika Sai Sree | Portfolio</title>
+  <title>Kruthika Sai Sree | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <header class="hero">
+    <div class="profile-card">
+      <img src="profile.jpg" alt="Profile" onclick="openModal()" />
+      <h1>Ilapuram Kruthika Sai Sree</h1>
+      <h3>AI/ML Engineer & Tech Explorer</h3>
+      <a href="#contact" class="button">Get In Touch</a>
+    </div>
+  </header>
 
-    <!-- Profile Section -->
-    <img src="profile.jpg" alt="Profile Photo" class="profile-pic" onclick="openModal()" />
-    <h1>Ilapuram Kruthika Sai Sree</h1>
-    <h3>AIML Engineer & Tech Enthusiast</h3>
-
-    <!-- About -->
-    <section>
-      <h2><a href="about.html">About Me</a></h2>
-      <p>I’m a passionate and results-driven tech professional specializing in Artificial Intelligence, Machine Learning, and Software Development. With a strong command of Python and a deep understanding of data-driven decision-making, I build intelligent solutions that create real-world impact.
-      From predictive modeling and data visualization to full-scale software development, I bring ideas to life with a balance of analytical thinking and creative problem-solving. Whether it’s designing ML pipelines, building data dashboards, or deploying scalable AI systems, I thrive at the intersection of innovation and execution.
-currently exploring opportunities where I can contribute to impactful projects, collaborate with forward-thinking teams, and continuously grow in the evolving landscape of AI and technology. </p>
+  <main>
+    <section id="about">
+      <h2>👩‍💻 About Me</h2>
+      <p>I’m a passionate and results-driven tech professional specializing in Artificial Intelligence, Machine Learning, and Software Development. With a strong command of Python and a deep understanding of data-driven decision-making, I build intelligent solutions that create real-world impact. From predictive modeling and data visualization to full-scale software development, I bring ideas to life with a balance of analytical thinking and creative problem-solving. Whether it’s designing ML pipelines, building data dashboards, or deploying scalable AI systems, I thrive at the intersection of innovation and execution. currently exploring opportunities where I can contribute to impactful projects, collaborate with forward-thinking teams, and continuously grow in the evolving landscape of AI and technology. </p> </section></p>
     </section>
 
-    <!-- Skills -->
-    <section>
-      <h2><a href="skills.html">Skills</a></h2>
+    <section id="skills">
+      <h2>🧠 Skills</h2>
       <ul>
-        <li><strong>Programming Languages:</strong> Python, SQL, C++</li>
-        <li><strong>AI/ML Tools:</strong> Pandas, NumPy, Scikit-Learn, OpenCV</li>
-        <li><strong>Web & Backend:</strong> Flask, React, HTML, CSS</li>
-        <li><strong>Tools:</strong> Microsoft Azure, GitHub, Jupyter, Office</li>
+        <li><strong>Languages:</strong> Python, SQL, C++</li>
+        <li><strong>ML Libraries:</strong> Pandas, NumPy, Scikit-learn, OpenCV</li>
+        <li><strong>Web:</strong> Flask, React, HTML, CSS</li>
+        <li><strong>Tools:</strong> Git, Azure, Jupyter</li>
       </ul>
     </section>
 
-    <!-- Projects -->
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Handwritten Digit Recognition</h3>
-        <p>A CNN model trained on MNIST dataset to classify handwritten digits.</p>
-        <p><strong>Tools:</strong> Python, CNN, MNIST</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">GitHub Link</a>
-      </div>
-      <div class="project">
-        <h3>Email Spam Classifier</h3>
-        <p>Classifies emails using TF-IDF and Naive Bayes.</p>
-        <p><strong>Tools:</strong> Python, Scikit-learn, NLP</p>
-        <a href="https://github.com/Ilapuramkruthikasaisree/emailspam" target="_blank">GitHub Link</a>
+    <section id="projects">
+      <h2>💼 Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🧮 Handwritten Digit Recognition</h3>
+          <p>Trained CNN on MNIST dataset to recognize digits (0-9).</p>
+          <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">View Code</a>
+        </div>
+        <div class="card">
+          <h3>✉️ Email Spam Classifier</h3>
+          <p>Used NLP + TF-IDF with Naive Bayes/SVM for filtering spam.</p>
+          <a href="https://github.com/Ilapuramkruthikasaisree/spamemail" target="_blank">View Code</a>
+        </div>
       </div>
       <div class="project">
         <h3>House Price Prediction</h3>
@@ -75,43 +73,31 @@ currently exploring opportunities where I can contribute to impactful projects, 
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section>
-      <h2><a href="certifications.html">Certifications</a></h2>
+    <section id="certifications">
+      <h2>📜 Certifications</h2>
       <ul>
-        <li><strong>Microsoft Azure AI - Document Intelligence</strong></li>
-        <li><strong>Microsoft Azure AI - NLP</strong></li>
-        <li><strong>Microsoft Azure AI - AI Overview</strong></li>
-        <li><strong>Microsoft Azure AI - Computer Vision</strong></li>
-        <li><strong>Cambridge English Empower B2</strong></li>
-        <li><strong>Innovation Summit - Mallareddy University</strong></li>
+        <li>Microsoft Azure AI - Computer Vision</li>
+        <li>Microsoft Azure AI - NLP</li>
+        <li>Cambridge English B2 Level</li>
+        <li>Innovation Summit – Mallareddy University</li>
       </ul>
     </section>
 
-    <!-- Contact -->
-    <section>
-      <h2><a href="contact.html">Contact</a></h2>
-      <ul>
-        <li>Email: kruthikasaisreereddy@gmail.com</li>
-        <li>College Email: 2311CS020430@mallareddyuniversity.ac.in</li>
-        <li><a href="https://www.linkedin.com/in/kruthika-sai-sree-876b02293/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a></li>
-        <li><a href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a></li>
-        <li><a href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a></li>
-        <li><a href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Salesforce Trailhead</a></li>
-      </ul>
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p>Email: <a href="mailto:kruthikasaisreereddy@gmail.com">kruthikasaisreereddy@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/kruthika-sai-sree-876b02293" target="_blank">Profile</a></p>
+      <p>GitHub: <a href="https://github.com/Ilapuramkruthikasaisree" target="_blank">Profile</a></p>
     </section>
+  </main>
 
-  </div>
-
-  <!-- Modal for Enlarged Profile -->
   <div id="modal" onclick="closeModal()">
-    <img src="profile.jpg" alt="Full Size Profile" />
+    <img src="profile.jpg" alt="Full Photo" />
   </div>
 
   <script>
     function openModal() {
-      document.getElementById("modal").style.display = "block";
+      document.getElementById("modal").style.display = "flex";
     }
     function closeModal() {
       document.getElementById("modal").style.display = "none";
