@@ -8,25 +8,32 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- Profile Image -->
     <img src="profile.jpg" alt="Profile Photo" class="profile-pic" onclick="showModal()" />
+    
+    <!-- Header -->
     <h1>Ilapuram Kruthika Sai Sree</h1>
     <h3>AIML Engineer & Tech Enthusiast</h3>
 
+    <!-- About -->
     <section>
       <h2>About Me</h2>
       <p>I'm an AI/ML engineer with a passion for solving real-world problems using data. I enjoy building smart systems that enhance everyday life. I love developing and deploying machine learning models.</p>
     </section>
 
+    <!-- Skills -->
     <section>
       <h2>Skills</h2>
       <ul>
         <li><strong>Programming Languages:</strong> Python, SQL, C++</li>
         <li><strong>Frameworks:</strong> Pandas, NumPy, Scikit-Learn, OpenCV</li>
-        <li><strong>Web Tech:</strong> Flask, React, HTML, CSS</li>
-        <li><strong>Tools:</strong> Azure, GitHub, Jupyter, Office</li>
+        <li><strong>Web Technologies:</strong> Flask, React, HTML, CSS</li>
+        <li><strong>Tools & Platforms:</strong> Azure, GitHub, Jupyter, Office</li>
       </ul>
     </section>
 
+    <!-- Projects -->
     <section>
       <h2>Projects</h2>
 
@@ -71,7 +78,7 @@
       </div>
     </section>
 
-
+    <!-- Certifications -->
     <section>
       <h2>Certifications</h2>
       <ul>
@@ -79,11 +86,12 @@
         <li>Microsoft Azure AI - Natural Language Processing</li>
         <li>Microsoft Azure AI - AI Overview</li>
         <li>Microsoft Azure AI - Computer Vision</li>
-        <li>Cambridge English Empower B2 Level Certificate</li>
-        <li>Innovation and Entrepreneurship Summit - Mallareddy University</li>
+        <li>Cambridge English Empower B2 Certificate</li>
+        <li>Innovation & Entrepreneurship Summit – MLRU</li>
       </ul>
     </section>
 
+    <!-- Contact -->
     <section>
       <h2>Contact</h2>
       <ul>
@@ -96,6 +104,7 @@
         <li><a class="btn" href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Trailhead</a></li>
       </ul>
     </section>
+
   </div>
 
   <!-- Modal Viewer -->
@@ -104,10 +113,12 @@
     <img id="modalImg" src="profile.jpg" alt="Full-size Profile" />
   </div>
 
+  <!-- Modal Script -->
   <script>
     function showModal() {
       document.getElementById('modal').style.display = 'block';
     }
+
     function closeModal() {
       document.getElementById('modal').style.display = 'none';
     }
