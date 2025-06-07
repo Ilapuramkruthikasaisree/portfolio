@@ -110,16 +110,6 @@
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, SQL, C++</li>
-        <li><strong>AI/ML Tools:</strong> Pandas, NumPy, Scikit-Learn, OpenCV</li>
-        <li><strong>Web:</strong> Flask, React, HTML, CSS</li>
-        <li><strong>Tools & Platforms:</strong> Azure, GitHub, Jupyter</li>
-      </ul>
-    </section>
-
-    <section>
       <h2>Projects</h2>
 
       <div class="project">
@@ -163,6 +153,16 @@
       </div>
     </section>
 
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Handwritten Digit Recognition</h3>
+        <p>A CNN model trained on the MNIST dataset to identify handwritten digits accurately.</p>
+        <p><strong>Tools:</strong> Python, CNN, MNIST</p>
+        <a class="btn" href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">View Project</a>
+      </div>
+    </section>
 
     <section>
       <h2>Certifications</h2>
