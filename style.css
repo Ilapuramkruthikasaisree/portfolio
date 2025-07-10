@@ -29,28 +29,20 @@ section {
   color: #00cec9;
 }
 
-.scroll-down {
-  font-size: 2rem;
-  margin-top: 20px;
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  margin: 0 10px;
   display: inline-block;
-  animation: bounce 2s infinite;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0);}
-  50% { transform: translateY(-10px);}
-}
-
-/* Hero */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Profile Pic */
 .profile-pic {
   width: 150px;
   border-radius: 50%;
@@ -58,10 +50,71 @@ section {
   border: 3px solid #00cec9;
 }
 
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #00cec9;
+  color: #121212;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #00b3ad;
+}
+
+.hero-bg-shape {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 206, 201, 0.15), transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 15px;
   margin-top: 30px;
 }
@@ -90,10 +143,4 @@ section {
 
 .project-card:hover {
   transform: scale(1.02);
-}
-
-/* Social Links */
-.social-links a {
-  margin: 0 10px;
-  display: inline-block;
 }
