@@ -4,119 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ilapuram Kruthika Sai Sree | Portfolio</title>
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
 
-    <!-- Profile Header -->
-    <div class="hero">
-      <img src="profile.jpg" alt="Kruthika Sai Sree" class="profile-pic" onclick="openModal()" />
-      <h1>Ilapuram Kruthika Sai Sree</h1>
-      <h3>AIML Engineer & Tech Enthusiast</h3>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hi, I'm <span class="highlight">Kruthika</span></h1>
+    <h2><span id="typed-text"></span></h2>
+    <a href="#about" class="scroll-down">↓</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" data-aos="fade-up">
+    <img src="profile.jpg" alt="Profile" class="profile-pic" />
+    <h2>About Me</h2>
+    <p>I'm an AI/ML engineer passionate about solving real-world problems using data and AI. I love creating smart systems and helping businesses and individuals grow with technology.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>Python</div>
+      <div>SQL</div>
+      <div>C++</div>
+      <div>Flask</div>
+      <div>React</div>
+      <div>HTML & CSS</div>
+      <div>Pandas</div>
+      <div>NumPy</div>
+      <div>Scikit-Learn</div>
+      <div>OpenCV</div>
+      <div>Matplotlib</div>
+      <div>Seaborn</div>
+      <div>Azure</div>
+      <div>GitHub</div>
+      <div>Logo Design</div>
+      <div>Video Editing</div>
+      <div>Translation</div>
+      <div>PPT Templates</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Handwritten Digit Recognition</h3>
+      <p>Uses CNN on MNIST to classify handwritten digits from 0 to 9 using deep learning techniques.</p>
+      <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">GitHub →</a>
     </div>
 
-    <!-- About Section -->
-    <section class="card">
-      <h2>About Me</h2>
-      <p>I’m a passionate and results-driven tech professional specializing in Artificial Intelligence, Machine Learning, and Software Development. With a strong command of Python and a deep understanding of data-driven decision-making, I build intelligent solutions that create real-world impact. From predictive modeling and data visualization to full-scale software development, I bring ideas to life with a balance of analytical thinking and creative problem-solving. Whether it’s designing ML pipelines, building data dashboards, or deploying scalable AI systems, I thrive at the intersection of innovation and execution. currently exploring opportunities where I can contribute to impactful projects, collaborate with forward-thinking teams, and continuously grow in the evolving landscape of AI and technology. </p> </section></p>
-    </section>
+    <div class="project-card">
+      <h3>Email Spam Classifier</h3>
+      <p>Classifies emails as spam or not using NLP, TF-IDF, and Naive Bayes/SVM.</p>
+      <a href="https://github.com/Ilapuramkruthikasaisree/spamemail" target="_blank">GitHub →</a>
+    </div>
 
-    <!-- Skills Section -->
-    <section class="card">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, SQL, C++</li>
-        <li><strong>AI/ML Tools & Frameworks:</strong> Pandas, NumPy, Scikit-Learn, OpenCV, Matplotlib, Seaborn</li>
-        <li><strong>Web & Backend:</strong> Flask, React, HTML, CSS</li>
-        <li><strong>Tools & Technologies:</strong> Microsoft Azure, GitHub, Jupyter, Microsoft Office, Databases</li>
-        <li><strong>Freelancing:</strong>Logo design, video editor, Translator, ppt templates</li>
-      </ul>
-    </section>
+    <div class="project-card">
+      <h3>House Price Prediction</h3>
+      <p>Predicts house prices using regression models like Linear Regression and XGBoost based on features like location, size, and rooms.</p>
+      <a href="https://github.com/Ilapuramkruthikasaisree/houseprice" target="_blank">GitHub →</a>
+    </div>
 
-    <!-- Projects Section -->
-    <section class="card">
-      <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Stock Price Prediction</h3>
+      <p>Time series forecasting of stock prices using LSTM or Random Forest to help investors make informed decisions.</p>
+      <a href="https://github.com/Ilapuramkruthikasaisree/stockprice" target="_blank">GitHub →</a>
+    </div>
 
-      <div class="project-grid">
-        <div class="project">
-          <h3>Handwritten Digit Recognition</h3>
-          <p>A CNN model trained on the MNIST dataset to identify digits.</p>
-          <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">GitHub Link</a>
-        </div>
+    <div class="project-card">
+      <h3>Online Shoppers Intention</h3>
+      <p>Performed EDA and feature engineering to analyze e-commerce user behavior and purchasing intentions.</p>
+      <a href="https://github.com/Ilapuramkruthikasaisree/onlineshoppers" target="_blank">GitHub →</a>
+    </div>
 
-        <div class="project">
-          <h3>Email Spam Classifier</h3>
-          <p>Classifies emails using NLP and TF-IDF with Naive Bayes/SVM.</p>
-          <a href="https://github.com/Ilapuramkruthikasaisree/spamemail" target="_blank">GitHub Link</a>
-        </div>
+    <div class="project-card">
+      <h3>Eye Ease Detection</h3>
+      <p>Computer vision project to detect eye fatigue and strain using image processing techniques.</p>
+      <a href="https://github.com/Ilapuramkruthikasaisree/Eye-ease-detection" target="_blank">GitHub →</a>
+    </div>
+  </section>
 
-        <div class="project">
-          <h3>House Price Prediction</h3>
-          <p>Predicts housing prices using XGBoost regression models.</p>
-          <a href="https://github.com/Ilapuramkruthikasaisree/houseprice" target="_blank">GitHub Link</a>
-        </div>
+  <!-- Certifications -->
+  <section id="certifications" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Azure AI - Document Intelligence and Knowledge Mining</li>
+      <li>Microsoft Azure AI - Natural Language Processing</li>
+      <li>Microsoft Azure AI - AI Overview</li>
+      <li>Microsoft Azure AI - Computer Vision</li>
+      <li>Cambridge English Empower B2 Level Certificate</li>
+      <li>Innovation and Entrepreneurship Summit - Mallareddy University</li>
+    </ul>
+  </section>
 
-        <div class="project">
-          <h3>Stock Price Prediction</h3>
-          <p>Forecasts stock prices using LSTM and Random Forest.</p>
-          <a href="https://github.com/Ilapuramkruthikasaisree/stockprice" target="_blank">GitHub Link</a>
-        </div>
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kruthikasaisreereddy@gmail.com">kruthikasaisreereddy@gmail.com</a></p>
+    <p>College Email: <a href="mailto:2311CS020430@mallareddyuniversity.ac.in">2311CS020430@mallareddyuniversity.ac.in</a></p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/kruthika-sai-sree-876b02293/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a>
+      <a href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a>
+      <a href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a>
+      <a href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Salesforce Trailhead</a>
+    </div>
+  </section>
 
-        <div class="project">
-          <h3>Online Shoppers Intention</h3>
-          <p>EDA and feature optimization based on customer behavior.</p>
-          <a href="https://github.com/Ilapuramkruthikasaisree/onlineshoppers" target="_blank">GitHub Link</a>
-        </div>
-
-        <div class="project">
-          <h3>Eye Ease Detection</h3>
-          <p>Computer vision app to prevent eye strain using CV techniques.</p>
-          <a href="https://github.com/Ilapuramkruthikasaisree/Eye-ease-detection" target="_blank">GitHub Link</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section class="card">
-      <h2>Certifications</h2>
-      <ul>
-        <li><strong>Microsoft Azure AI - Document Intelligence and Knowledge Mining</strong></li>
-        <li><strong>Microsoft Azure AI - Natural Language Processing</strong></li>
-        <li><strong>Microsoft Azure AI - AI Overview</strong></li>
-        <li><strong>Microsoft Azure AI - Computer Vision</strong></li>
-        <li><strong>Cambridge English Empower B2 Level Certificate</strong></li>
-        <li><strong>Innovation and Entrepreneurship Summit - Mallareddy University</strong></li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="card" id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: kruthikasaisreereddy@gmail.com</li>
-        <li>College Email: 2311CS020430@mallareddyuniversity.ac.in</li>
-        <li><a href="https://www.linkedin.com/in/kruthika-sai-sree-876b02293/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a></li>
-        <li><a href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a></li>
-        <li><a href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a></li>
-        <li><a href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Salesforce Trailhead</a></li>
-      </ul>
-    </section>
-  </div>
-
-  <!-- Modal for Profile Image -->
-  <div id="modal" onclick="closeModal()">
-    <img src="profile.jpg" alt="Enlarged Profile" />
-  </div>
-
-  <script>
-    function openModal() {
-      document.getElementById("modal").style.display = "flex";
-    }
-    function closeModal() {
-      document.getElementById("modal").style.display = "none";
-    }
-  </script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
