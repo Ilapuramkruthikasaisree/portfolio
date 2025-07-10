@@ -1,7 +1,5 @@
-// Initialize AOS
 AOS.init();
 
-// Typewriter effect
 const typedText = document.getElementById('typed-text');
 const words = ['AI/ML Engineer', 'Tech Enthusiast', 'Freelancer'];
 let wordIndex = 0;
