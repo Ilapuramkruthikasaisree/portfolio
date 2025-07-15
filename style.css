@@ -11,6 +11,9 @@ header {
   align-items: center;
   padding: 20px 10%;
   background: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header h1 {
@@ -68,14 +71,9 @@ nav a:hover {
 
 section {
   padding: 60px 10%;
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1; /* Always visible initially */
+  transform: translateY(0); /* No initial offset */
   transition: opacity 1s ease, transform 1s ease;
-}
-
-section.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .skills-list {
