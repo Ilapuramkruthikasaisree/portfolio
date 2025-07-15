@@ -1,149 +1,161 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 
 header {
+  background: #0d0d0d;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 50px;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
 }
 
 header h1 {
-  font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #00ffff;
-  font-weight: 600;
-  transition: color 0.3s;
+  color: #00f0ff;
+  font-weight: 500;
 }
 
-nav a:hover {
-  color: #ff7f50;
-}
-
-.hero {
+section {
+  padding: 100px 20px;
   text-align: center;
-  padding: 70px 20px;
 }
 
-.profile-pic {
-  width: 160px;
-  height: 160px;
+#about {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+#skills {
+  background: linear-gradient(135deg, #1c1c1c, #2b2b2b);
+}
+
+#projects {
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+}
+
+#certifications {
+  background: linear-gradient(135deg, #1c1c1c, #2b2b2b);
+}
+
+#contact {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  border: 4px solid #00ffff;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  border: 4px solid #00f0ff;
+  box-shadow: 0 0 20px #00f0ff;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-.hero span {
-  color: #00ffff;
+h2 {
+  font-size: 28px;
+  margin-top: 0;
 }
 
-.hero .btn {
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #00f0ff;
+}
+
+.cta-btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #00ffff;
+  background: #00f0ff;
   color: #000;
+  padding: 12px 24px;
   border-radius: 30px;
-  font-weight: 600;
+  font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s, color 0.3s;
+  transition: transform 0.3s;
 }
 
-.hero .btn:hover {
-  background: #ff7f50;
-  color: #fff;
+.cta-btn:hover {
+  transform: scale(1.05);
 }
 
-section {
-  padding: 60px 10%;
-  opacity: 1; /* Always visible initially */
-  transform: translateY(0); /* No initial offset */
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.skills-list {
+.skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
 }
 
-.skills-list span {
-  background: rgba(0, 0, 0, 0.3);
+.skills-container span {
+  background: #222;
   padding: 8px 16px;
   border-radius: 20px;
 }
 
-.projects-grid {
+.projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  margin-top: 40px;
 }
 
 .project-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 15px;
-  text-align: center;
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 240, 255, 0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
 }
 
 .project-card a {
-  color: #00ffff;
+  color: #00f0ff;
   text-decoration: none;
-}
-
-.project-card a:hover {
-  color: #ff7f50;
+  font-weight: bold;
 }
 
 ul {
-  max-width: 600px;
-  margin: auto;
-  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #00f0ff;
 }
 
 .social-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .social-links a {
-  color: #00ffff;
+  margin: 0 10px;
+  color: #00f0ff;
   text-decoration: none;
-  font-weight: 600;
-}
-
-.social-links a:hover {
-  color: #ff7f50;
 }
 
 footer {
+  background: #0d0d0d;
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  margin-top: 30px;
+  font-size: 14px;
 }
