@@ -4,93 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ilapuram Kruthika Sai Sree | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="profile-photo">
-      <img src="profile-photo.jpg" alt="Profile Photo">
-    </div>
-    <h1>Hi, I'm <span>Ilapuram Kruthika Sai Sree</span></h1>
-    <p>AI/ML Engineer • Tech Enthusiast • Creative Freelancer</p>
-    <a href="#projects" class="btn">See My Work →</a>
+  <header>
+    <nav>
+      <div class="logo">Kruthika</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about" class="section">
+  <section class="hero hidden">
+    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo" />
+    <h1>Hi, I'm <span>Ilapuram Kruthika Sai Sree</span></h1>
+    <p></p>
+    <a href="#projects" class="btn">See My Work</a>
+  </section>
+
+  <section id="about" class="about hidden">
     <h2>About Me</h2>
-    <p>I'm an AI/ML engineer passionate about solving real-world problems using data and AI. I love creating smart systems and helping businesses and individuals grow with technology.</p>
+    <p>I’m an AI/ML engineer passionate about solving real-world problems using data and AI. I love creating smart systems, designing beautiful experiences, and empowering people and businesses through technology.</p>
   </section>
 
-  <section id="skills" class="section">
+  <section id="skills" class="skills hidden">
     <h2>Skills</h2>
-    <div class="skills-grid">
-      <span>Python</span><span>SQL</span><span>C++</span><span>Flask</span><span>React</span>
-      <span>HTML & CSS</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span><span>OpenCV</span>
-      <span>Matplotlib</span><span>Seaborn</span><span>Azure</span><span>GitHub</span><span>Logo Design</span>
-      <span>Video Editing</span><span>Translation</span><span>PPT Templates</span>
+    <div class="skill-list">
+      <span>Java</span>
+      <span>SQL</span>
+      <span>C++</span>
+      <span>Flask</span>
+      <span>React</span>
+      <span>HTML & CSS</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Scikit-Learn</span>
+      <span>OpenCV</span>
+      <span>Matplotlib</span>
+      <span>Seaborn</span>
+      <span>Azure</span>
+      <span>GitHub</span>
+      <span>Logo Design</span>
+      <span>Video Editing</span>
+      <span>Translation</span>
+      <span>PPT Templates</span>
     </div>
   </section>
 
-  <section id="projects" class="section projects">
+  <section id="projects" class="projects hidden">
     <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Handwritten Digit Recognition</h3>
-      <p>Uses CNN on MNIST to classify handwritten digits from 0 to 9 using deep learning techniques.</p>
-      <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">GitHub →</a>
-    </div>
-    <div class="project-card">
-      <h3>Email Spam Classifier</h3>
-      <p>Classifies emails as spam or not using NLP, TF-IDF, and Naive Bayes/SVM.</p>
-      <a href="https://github.com/Ilapuramkruthikasaisree/spamemail" target="_blank">GitHub →</a>
-    </div>
-    <div class="project-card">
-      <h3>House Price Prediction</h3>
-      <p>Predicts house prices using regression models like Linear Regression and XGBoost based on features like location, size, and rooms.</p>
-      <a href="https://github.com/Ilapuramkruthikasaisree/houseprice" target="_blank">GitHub →</a>
-    </div>
-    <div class="project-card">
-      <h3>Stock Price Prediction</h3>
-      <p>Time series forecasting of stock prices using LSTM or Random Forest to help investors make informed decisions.</p>
-      <a href="https://github.com/Ilapuramkruthikasaisree/stockprice" target="_blank">GitHub →</a>
-    </div>
-    <div class="project-card">
-      <h3>Online Shoppers Intention</h3>
-      <p>Performed EDA and feature engineering to analyze e-commerce user behavior and purchasing intentions.</p>
-      <a href="https://github.com/Ilapuramkruthikasaisree/onlineshoppers" target="_blank">GitHub →</a>
-    </div>
-    <div class="project-card">
-      <h3>Eye Ease Detection</h3>
-      <p>Computer vision project to detect eye fatigue and strain using image processing techniques.</p>
-      <a href="https://github.com/Ilapuramkruthikasaisree/Eye-ease-detection" target="_blank">GitHub →</a>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Handwritten Digit Recognition</h3>
+        <p>Uses CNN on MNIST to classify handwritten digits from 0 to 9.</p>
+        <a href="https://github.com/Ilapuramkruthikasaisree/handwritten" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>Email Spam Classifier</h3>
+        <p>Classifies emails as spam or not using NLP and TF-IDF techniques.</p>
+        <a href="https://github.com/Ilapuramkruthikasaisree/spamemail" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>House Price Prediction</h3>
+        <p>Predicts house prices using regression models like Linear Regression and XGBoost.</p>
+        <a href="https://github.com/Ilapuramkruthikasaisree/houseprice" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>Stock Price Prediction</h3>
+        <p>Forecasts stock prices using LSTM or Random Forest models.</p>
+        <a href="https://github.com/Ilapuramkruthikasaisree/stockprice" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>Online Shoppers Intention</h3>
+        <p>Analyzed e-commerce user behavior and purchasing intentions.</p>
+        <a href="https://github.com/Ilapuramkruthikasaisree/onlineshoppers" target="_blank">GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>Eye Ease Detection</h3>
+        <p>Computer vision system for detecting eye fatigue and strain.</p>
+        <a href="https://github.com/Ilapuramkruthikasaisree/Eye-ease-detection" target="_blank">GitHub →</a>
+      </div>
     </div>
   </section>
 
-  <section id="certifications" class="section">
+  <section id="certifications" class="certifications hidden">
     <h2>Certifications</h2>
     <ul>
       <li>Microsoft Azure AI - Document Intelligence and Knowledge Mining</li>
       <li>Microsoft Azure AI - Natural Language Processing</li>
       <li>Microsoft Azure AI - AI Overview</li>
       <li>Microsoft Azure AI - Computer Vision</li>
-      <li>Cambridge English Empower B2 Level Certificate</li>
+      <li>Cambridge English Empower B2 Certificate</li>
       <li>Innovation and Entrepreneurship Summit - Mallareddy University</li>
     </ul>
   </section>
 
-  <footer id="contact" class="section">
+  <section id="contact" class="contact hidden">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:kruthikasaisreereddy@gmail.com">kruthikasaisreereddy@gmail.com</a></p>
     <p>College Email: <a href="mailto:2311CS020430@mallareddyuniversity.ac.in">2311CS020430@mallareddyuniversity.ac.in</a></p>
-    <div class="socials">
+    <div class="social-links">
       <a href="https://www.linkedin.com/in/kruthika-sai-sree-876b02293/" target="_blank">LinkedIn</a>
       <a href="https://github.com/Ilapuramkruthikasaisree" target="_blank">GitHub</a>
       <a href="https://leetcode.com/u/Ilapuram_kruthika_sai_sree/" target="_blank">LeetCode</a>
       <a href="https://www.hackerrank.com/profile/kruthikasaisree" target="_blank">HackerRank</a>
       <a href="https://www.salesforce.com/trailblazer/l4vjjre4gct9wgh4iw" target="_blank">Trailhead</a>
     </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ilapuram Kruthika Sai Sree. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
