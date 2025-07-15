@@ -1,10 +1,8 @@
-/* Reset and base */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  color: #ffffff;
 }
 
 header {
@@ -12,22 +10,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
+  font-weight: 700;
   font-size: 24px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
 nav a {
+  margin-left: 20px;
   text-decoration: none;
   color: #00ffff;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
@@ -37,14 +32,15 @@ nav a:hover {
 
 .hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   border: 4px solid #00ffff;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -55,12 +51,13 @@ nav a:hover {
 
 .hero .btn {
   display: inline-block;
-  padding: 10px 20px;
+  margin-top: 20px;
+  padding: 12px 25px;
   background: #00ffff;
   color: #000;
   border-radius: 30px;
+  font-weight: 600;
   text-decoration: none;
-  margin-top: 20px;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -71,11 +68,14 @@ nav a:hover {
 
 section {
   padding: 60px 10%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
+section.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skills-list {
@@ -86,8 +86,8 @@ section h2 {
 }
 
 .skills-list span {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 8px 15px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 16px;
   border-radius: 20px;
 }
 
@@ -102,11 +102,15 @@ section h2 {
   padding: 20px;
   border-radius: 15px;
   text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .project-card a {
-  display: inline-block;
-  margin-top: 10px;
   color: #00ffff;
   text-decoration: none;
 }
@@ -124,14 +128,15 @@ ul {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 15px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .social-links a {
   color: #00ffff;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .social-links a:hover {
@@ -141,6 +146,6 @@ ul {
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.5);
   margin-top: 30px;
 }
