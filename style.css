@@ -74,14 +74,40 @@ li {
   transform: scale(1.02);
 }
 
+/* Pale Blue Link Styles */
 a {
-  color: #00cec9;
+  color: #a8d8ff;       /* pale blue */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #81ecec;
+  color: #d6ecff;       /* lighter pale blue */
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background-color: #151515;
+  color: #cccccc;
+  border-top: 2px solid #00cec9;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #a8d8ff;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #d6ecff;
   text-decoration: underline;
 }
