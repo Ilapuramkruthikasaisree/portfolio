@@ -1,113 +1,279 @@
-/* Dark Theme Portfolio Styles */
+/* ================================
+   GLOBAL STYLES
+================================ */
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #121212, #1e1e1e);
-  color: #e0e0e0;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
-.container {
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1b1b1b);
+  color: #e6e6e6;
+  line-height: 1.6;
 }
 
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #00b894;
-  display: block;
-  margin: 0 auto 15px auto;
-  box-shadow: 0 0 15px #00cec9;
-}
-
-h1 {
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 5px;
-}
-
-h3 {
-  text-align: center;
-  color: #bbbbbb;
-  font-weight: normal;
-  margin-top: 0;
-}
-
-section {
-  margin: 35px 0;
-}
-
-h2 {
-  color: #00cec9;
-  border-bottom: 2px solid #00cec9;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-.project {
-  background-color: #2a2a2a;
-  padding: 15px 20px;
-  border-left: 4px solid #00cec9;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s ease;
-}
-
-.project:hover {
-  transform: scale(1.02);
-}
-
-/* Pale Blue Link Styles */
+/* Pale Blue Link Style */
 a {
-  color: #a8d8ff;       /* pale blue */
+  color: #a8d8ff;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 a:hover {
-  color: #d6ecff;       /* lighter pale blue */
-  text-decoration: underline;
+  color: #d6ecff;
+  text-shadow: 0 0 8px #d6ecff;
 }
 
-/* Footer Styling */
-footer {
-  margin-top: 50px;
-  padding: 20px;
+/* ================================
+   HEADER
+================================ */
+
+header {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 20px 40px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #d6ecff;
+  transform: scale(1.05);
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+
+#about {
   text-align: center;
-  background-color: #151515;
+  padding: 60px 20px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00cec9;
+  box-shadow: 0 0 18px #00cec9;
+}
+
+#about h2 {
+  margin-top: 20px;
+  font-size: 32px;
+  color: #a8d8ff;
+}
+
+#about h2 span {
+  color: #81ecec;
+}
+
+.subtitle {
+  margin-top: 10px;
   color: #cccccc;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 12px 28px;
+  background: #00cec9;
+  color: #000;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #81ecec;
+  transform: translateY(-3px);
+}
+
+.description {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #bbbbbb;
+}
+
+/* ================================
+   SKILLS SECTION
+================================ */
+
+#skills {
+  padding: 60px 20px;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #00cec9;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skills-container span {
+  background: #222;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #a8d8ff;
+  font-size: 15px;
+  border: 1px solid #333;
+  transition: 0.3s ease;
+}
+
+.skills-container span:hover {
+  background: #00cec9;
+  color: #000;
+  transform: scale(1.1);
+}
+
+/* ================================
+   PROJECTS
+================================ */
+
+#projects {
+  padding: 60px 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #00cec9;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #00cec9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #00cec9;
+}
+
+.project-card h3 {
+  color: #81ecec;
+  margin-bottom: 8px;
+}
+
+.project-card a {
+  font-weight: 600;
+}
+
+/* ================================
+   CERTIFICATIONS
+================================ */
+
+#certifications {
+  padding: 60px 20px;
+}
+
+#certifications h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #00cec9;
+  margin-bottom: 20px;
+}
+
+#certifications ul {
+  max-width: 800px;
+  margin: auto;
+  list-style: none;
+}
+
+#certifications li {
+  margin-bottom: 12px;
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #00cec9;
+  transition: 0.2s;
+}
+
+#certifications li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 12px #00cec9;
+}
+
+/* ================================
+   CONTACT SECTION
+================================ */
+
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #00cec9;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  margin-top: 40px;
+  background: #151515;
+  padding: 25px;
+  text-align: center;
   border-top: 2px solid #00cec9;
 }
 
 footer p {
-  margin: 8px 0;
+  color: #aaaaaa;
   font-size: 14px;
-}
-
-footer a {
-  color: #a8d8ff;
-  font-weight: 500;
-}
-
-footer a:hover {
-  color: #d6ecff;
-  text-decoration: underline;
 }
