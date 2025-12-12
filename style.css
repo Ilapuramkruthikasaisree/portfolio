@@ -337,4 +337,10 @@ footer p {
   header h1 {
     text-align: left;
   }
+   nav a.active {
+  color: #00cec9 !important;
+  text-shadow: 0 0 6px #00cec9;
+  border-bottom: 2px solid #00cec9;
+}
+
 }
