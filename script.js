@@ -1,3 +1,10 @@
+// ------------------ HAMBURGER MENU ------------------
+const hamburger = document.getElementById("hamburger");
+const navLinksMenu = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+  navLinksMenu.classList.toggle("show");
+});
 // Highlight active navigation link when scrolling
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
