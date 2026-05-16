@@ -15,6 +15,63 @@ body {
   color: #e6e6e6;
   line-height: 1.6;
 }
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+#hero h2 {
+    font-size: 1.8rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #38bdf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.secondary-btn {
+    background-color: #1e293b;
+    border: 1px solid #38bdf8;
+}
 
 /* Pale Blue Link Color */
 a {
