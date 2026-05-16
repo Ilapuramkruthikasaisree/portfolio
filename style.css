@@ -250,6 +250,16 @@ section h2 {
 #certifications li:hover {
   transform: translateX(5px);
 }
+#certifications li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease;
+}
+
+#certifications li a:hover {
+  color: #38bdf8;
+}
 
 /* ================= CONTACT ================= */
 
