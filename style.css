@@ -1,6 +1,4 @@
-from pathlib import Path
-
-css = r'''*{
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -345,8 +343,3 @@ font-size:1rem;
 }
 
 }
-'''
-
-path=Path('/mnt/data/style.css')
-path.write_text(css,encoding='utf-8')
-print(path)
